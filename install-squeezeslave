@@ -18,12 +18,7 @@ sudo cat sound-blaster.alsa.conf > /etc/asound.conf
 # Install Upstart config for Squeezeslave daemon
 # Disable with:
 # sudo update-rc.d -f squeezeslave remove
-sudo cat > /etc/default/squeezeslave-zones <<\EOF
-# Configure zones here.
-# Zone names must match the output of squeezeslave -L and the pcm.slave plug defined in /etc/asound.conf
-#ZONES=(onboardgreen sbgreen sbblack sbpink)
-EOF
-
+sudo cp squeezeslave-zones.defaults /etc/default/squeezeslave-zones
 sudo cp squeezeslave.init /etc/init.d/squeezeslave
 
 sudo chmod 755 /etc/init.d/squeezeslave

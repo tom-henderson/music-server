@@ -1,0 +1,3 @@
+# Configure zones here.
+# Zone names must match the output of squeezeslave -L and the pcm.slave plug defined in /etc/asound.conf
+#ZONES=(onboardgreen sbgreen sbblack sbpink)
