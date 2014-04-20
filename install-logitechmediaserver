@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Install & Configure Logitech Media Server
+
+# Add the Logitech software repositories to Ubuntu's package manager
+sudo sh -c 'echo "deb http://debian.slimdevices.com stable main" >> /etc/apt/sources.list'
+
+sudo apt-get -y --allow-unauthenticated install logitechmediaserver
+
+mkdir ~/music
+mkdir ~/playlists
+
+#TODO: custom-convert.conf for 44.1 downsample?
+
+#TODO: support for m4a files

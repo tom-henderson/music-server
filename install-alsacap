@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Install alsacap
+# http://www.volkerschatz.com/noise/alsa.html#alsacap
+
+sudo apt-get -y install build-essential libasound2-dev
+
+wget http://www.volkerschatz.com/noise/alsacap.tgz
+tar xzf alsacap.tgz
+rm alsacap.tgz
+
+cd alsacap
+make
+sudo make install
+
