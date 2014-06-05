@@ -24,3 +24,5 @@ pcm.sbgreen {
 ```
 
 To make additional outputs run on system startup, edit /etc/default/squeezeslave-zones and add your output names.
+
+Init script modified from Ralph Irving's [squeezeslave.init.debian](https://code.google.com/p/squeezeslave/source/browse/squeezeslave/trunk/squeezeslave/config/squeezeslave.init.debian?r=221)
