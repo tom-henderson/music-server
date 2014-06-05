@@ -15,7 +15,7 @@ rm squeezeslave $SQUEEZESLAVE
 # Configure zones. This will need tweaking based on the soundcard.
 sudo cat sound-blaster.alsa.conf > /etc/asound.conf
 
-# Install Upstart config for Squeezeslave daemon
+# Start on boot:
 # Disable with:
 # sudo update-rc.d -f squeezeslave remove
 sudo cp squeezeslave-zones.defaults /etc/default/squeezeslave-zones
