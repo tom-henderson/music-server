@@ -13,7 +13,7 @@ sudo mv squeezeslave-i64 /usr/bin/squeezeslave
 rm squeezeslave $SQUEEZESLAVE
 
 # Configure zones. This will need tweaking based on the soundcard.
-sudo cp conf/sound-blaster.alsa.conf > /etc/asound.conf
+sudo cp conf/sound-blaster.alsa.conf /etc/asound.conf
 
 # Start on boot:
 # Disable with:
